@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Addition Forms</title>
+  </head>
+  <body>
+    <h1> Additions Forms</h1>
+    <form class="" action="{% url 'addition' %}" method="GET">
+      {% csrf_token %}
+      Enter first no. : <input type="text" name="number1"><br><br>
+      Enter second no. : <input type="text" name="number2"><br><br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
